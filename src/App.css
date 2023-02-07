@@ -1,0 +1,9 @@
+:root {
+    /* Create variables for different colors */
+    --bg-color: #E5BD81;
+    --font-500: 'Lora', serif;
+}
+
+body {
+    font-family: var(--font-500);
+}
