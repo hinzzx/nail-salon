@@ -4,6 +4,23 @@
     --font-500: 'Lora', serif;
 }
 
+@font-face {
+    font-family: "Cartis";
+    font-weight: 900;
+    src: url("./assets/fonts/cartis-beautiful.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("./assets/fonts/oswald.ttf") format("truetype");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--font-500);
 }

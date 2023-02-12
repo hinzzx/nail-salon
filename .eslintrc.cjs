@@ -21,6 +21,8 @@ module.exports = {
     plugins: ["react", "@typescript-eslint", "prettier"],
     rules: {
         "react/react-in-jsx-scope": 0,
-        tabs: 0,
+        "import/prefer-default-export": 0,
+        "comma-dangle": 0,
+        "@typescript-eslint/ban-ts-comment": 0,
     },
 }
