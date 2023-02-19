@@ -14,6 +14,8 @@ export const MainContainer = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat no-repeat;
+    /* This line makes the background parallaxing */
+    background-attachment: fixed;
 `
 
 export const NavBar = styled.div`
@@ -61,12 +63,16 @@ export const ThreeImagesContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: 70vh;
     background-color: #ffedf4;
+
+    @media (max-width: 1024px) {
+        height: 90vh;
+    }
 
     @media (max-width: 768px) {
         flex-direction: column;
-        height: 100%;
+        height: 70%;
         gap: 1rem;
     }
 `
@@ -74,7 +80,7 @@ export const ThreeImagesContainer = styled.div`
 export const ImageContainer = styled.img`
     position: relative;
     height: 95%;
-    width: 33.33333%;
+    width: 33.33333%; /* 1/3 */
     border-radius: 0.5rem;
     transition: transform 0.4s;
     -webkit-box-shadow: 0px -1px 90px -24px rgba(0, 0, 0, 1);
@@ -108,7 +114,7 @@ export const Button = styled.button`
     font-family: "Oswald";
     color: white;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     -webkit-box-shadow: 0px -1px 90px -24px rgba(0, 0, 0, 1);
     -moz-box-shadow: 0px -1px 90px -24px rgba(0, 0, 0, 1);
     box-shadow: 0px -1px 90px -24px rgba(0, 0, 0, 1);
@@ -136,9 +142,6 @@ export const Button = styled.button`
 
 export const SecondSectionContainer = styled.div`
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 0;
     align-items: center;
     height: 100vh;
     background-color: #ffedf4;

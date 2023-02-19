@@ -1,15 +1,17 @@
+/* eslint-disable import/extensions */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef } from "react"
 import Typewriter from "typewriter-effect"
 import { motion } from "framer-motion"
 // @ts-ignore
 import ImageSlider from "./ImageSlider"
+// @ts-ignore
+import PriceTable from "../../components/PriceTable.jsx"
 
 import {
     MainContainer,
     ContentContainer,
     ThreeImagesContainer,
-    ImageContainer,
     Title,
     NavBar,
     Button,
@@ -73,11 +75,23 @@ function Home() {
             </ContentContainer>
 
             <ThreeImagesContainer>
+                <Title
+                    style={{
+                        fontSize: "2rem",
+                        textAlign: "center",
+                        color: "#ffffff",
+                        // make outline of the text with a little bit darker color
+                        textShadow: "0 0 0.5rem #fddbdb, 0 0 0.5rem #fddbdb",
+                    }}
+                >
+                    {" "}
+                    Част от моята работа !{" "}
+                </Title>
                 <ImageSlider slides={slides} />
             </ThreeImagesContainer>
 
             <SecondSectionContainer ref={sectionRef}>
-                Hey
+                <PriceTable />
             </SecondSectionContainer>
         </MainContainer>
     )

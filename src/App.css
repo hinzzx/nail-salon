@@ -23,4 +23,5 @@
 
 body {
     font-family: var(--font-500);
+    overflow-x: hidden;
 }
